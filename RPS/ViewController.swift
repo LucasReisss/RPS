@@ -30,7 +30,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
+        view.backgroundColor = .gray
         topLabel.text = "🤖"
         statusLabel.text = "Pedra, Papel, Tesoura?"
     }
@@ -46,6 +46,7 @@ class ViewController: UIViewController {
         paperButton.isEnabled = true
         scissorsButton.isEnabled = true
         playAgainButton.isHidden = true
+        view.backgroundColor = .gray
         
     }
     
@@ -86,6 +87,7 @@ class ViewController: UIViewController {
         }
         
         playAgainButton.isHidden = false
+        view.backgroundColor = UIColor(red: 173.0 / 255.0, green: 200.0 / 255.0, blue: 169.0 / 255.0, alpha: 1)
         
     }
 
